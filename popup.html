@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linear 日本語化</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Linear 日本語化</h1>
+        <p class="version">v1.0.0</p>
+
+        <div class="settings">
+            <div class="setting-item">
+                <label for="enableToggle">
+                    <input type="checkbox" id="enableToggle" checked>
+                    <span>日本語化を有効にする</span>
+                </label>
+            </div>
+
+            <div class="setting-item">
+                <label for="translateAttributes">
+                    <input type="checkbox" id="translateAttributes" checked>
+                    <span>属性テキスト（ボタンラベルなど）も翻訳する</span>
+                </label>
+            </div>
+        </div>
+
+        <div class="info">
+            <p>このExtensionは Linear サイトのUIテキストを日本語に翻訳します。</p>
+            <p>ページをリロードすると翻訳が反映されます。</p>
+        </div>
+
+        <div class="footer">
+            <button id="reloadBtn" class="btn btn-primary">ページをリロード</button>
+            <p class="status-message" id="statusMessage"></p>
+        </div>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>

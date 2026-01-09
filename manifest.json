@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Linear 日本語化",
+  "version": "1.0.0",
+  "description": "Linear のUI を日本語に翻訳します",
+  "permissions": ["scripting", "storage"],
+  "host_permissions": ["https://linear.app/*"],
+  "icons": {
+    "16": "images/icon-16.png",
+    "48": "images/icon-48.png",
+    "128": "images/icon-128.png"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Linear 日本語化設定"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://linear.app/*"],
+      "js": ["translations.js", "content-script.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
