@@ -395,6 +395,15 @@ const translations = {
   "Broadcast notifications to Slack": "Slackに通知を配信",
   "Off": "オフ",
 
+  // Slack通知設定
+  "Slack通知": "Slack通知",
+  "Connect a Slack channel to receive notifications about this team": "このチームに関する通知を受け取るSlackチャンネルを接続",
+  "Connect a Slack channel": "Slackチャンネルを接続",
+  "Connect a channel to broadcast notifications from this team": "このチームからの通知を配信するチャンネルを接続",
+  "New project update is posted": "新しいプロジェクト更新が投稿されたとき",
+  "An issue changes status": "イシューのステータスが変更されたとき",
+  "Comments to issues": "イシューへのコメント",
+
   // Issues, projects, and docs
   "Issues, projects, and docs": "イシュー、プロジェクト、ドキュメント",
   "Issue labels": "イシューラベル",
